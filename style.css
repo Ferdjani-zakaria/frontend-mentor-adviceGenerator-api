@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --primary-light-cyan: hsl(193, 38%, 86%);
+  --primary-Neon-Green: hsl(150, 100%, 66%);
+  --neutral-Grayish-Blue: hsl(217, 19%, 38%);
+  --neutral-Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --neutral-Dark-Blue: hsl(218, 23%, 16%);
+  --quote: 28px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  margin: 0;
+  font-size: var(--quote);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--neutral-Dark-Blue);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--neutral-Dark-Grayish-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(400px, 80%);
+  margin: 0 auto;
+  border-radius: 0.5em;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 450px) {
+  .card {
+    width: 400px;
+  }
+}
+
+.card__id {
+  font-size: 0.5em;
+  padding-top: 2em;
+  letter-spacing: 0.2em;
+  color: var(--primary-Neon-Green);
+}
+
+blockquote {
+  line-height: 1.5em;
+  color: var(--primary-light-cyan);
+  text-align: center;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.dice-container {
+  display: flex;
+  position: relative;
+  top: 0.75em;
+  background-color: var(--primary-Neon-Green);
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dice-container img {
+  height: 0.7em;
+}
+
+.dice-container:hover {
+  background-color: cyan;
+  box-shadow: 0 0 12px 1px cyan;
+}
