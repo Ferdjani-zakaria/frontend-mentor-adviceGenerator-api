@@ -10,8 +10,8 @@ const getAdvice = () => {
     })
     .then((data) => {
       console.log(data.slip);
-      advice_id.innerHTML = "ADVICE " + data.slip.id;
-      advice.innerHTML = data.slip.advice;
+      advice_id.innerText = "ADVICE # " + data.slip.id;
+      advice.innerText = data.slip.advice;
     })
     .catch((error) => {
       console.log(error);

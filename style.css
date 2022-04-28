@@ -33,6 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -40,15 +41,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: min(400px, 80%);
-  margin: 0 auto;
+  max-width: min(26rem, 80%);
   border-radius: 0.5em;
   justify-content: space-between;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 31.25rem) {
   .card {
-    width: 400px;
+    max-width: 33rem;
   }
 }
 
